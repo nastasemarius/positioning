@@ -1,1 +1,23 @@
-<p>app-map works!</p>
+<div style="padding: 10px 0">
+  <input
+    type="text"
+    placeholder="Search places..."
+    [(ngModel)]="query"
+    style="width: 90%;"
+  />
+  <button (click)="places(query)">Search</button>
+</div>
+<div #map [style.width]="width" [style.height]="height"></div>
+
+<div style="padding: 10px 0">  
+    <div>  
+      <div>  
+        <label>Latitude : {{lat}}</label>  
+            <br/>
+        <label>Longitude : {{lng}}</label>  
+      </div>  
+      <div>  
+        <label>Address : {{address}}</label>  
+      </div>  
+    </div>  
+  </div>  

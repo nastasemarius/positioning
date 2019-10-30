@@ -1,9 +1,9 @@
 import { Component, Injectable } from '@angular/core';
 
 import { defineCustomElements, addTheme } from 'corporate-ui-dev';
-import { theme as scania } from 'scania-theme'; 
+import { theme as scania } from 'scania-theme';
 
-defineCustomElements(['c-navigation','c-header', 'c-theme','c-footer', 'c-content']);
+defineCustomElements(['c-navigation', 'c-header', 'c-theme', 'c-footer', 'c-content']);
 addTheme(scania);
 
 
